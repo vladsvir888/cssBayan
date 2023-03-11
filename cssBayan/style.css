@@ -37,32 +37,12 @@ body {
     margin-bottom: 2rem;
 }
 
-.accordion:hover .accordion-collapse__text {
-    color: inherit;
-}
-
-.accordion:hover .accordion-collapse__icon {
-    opacity: 1;
-}
-
 .accordion-collapse {
     position: relative;
     padding: 1rem 0;
     font-size: 1.5rem;
     font-weight: 700;
     border-top: 0.0625rem solid #d0d7de;
-}
-
-.accordion-collapse:hover .accordion-collapse__img {
-    display: block;
-}
-
-.accordion-collapse:hover .accordion-collapse__text {
-    color: inherit;
-}
-
-.accordion-collapse:hover .accordion-collapse__icon {
-    transform: rotate(45deg);
 }
 
 .accordion-collapse__input {
@@ -100,6 +80,7 @@ body {
 }
 
 .accordion-collapse__img {
+    grid-column: 1 / 3;
     display: none;
     height: 25rem;
     width: 25rem;
@@ -111,8 +92,65 @@ body {
 .accordion-collapse__icon {
     width: 1.5rem;
     height: 1.5rem;
-    opacity: 0;
     transition: transform 0.5s;
+}
+
+@media (hover: hover) {
+    .accordion:hover .accordion-collapse__text {
+        color: inherit;
+    }
+    
+    .accordion:hover .accordion-collapse__icon {
+        opacity: 1;
+    }
+
+    .accordion-collapse:hover .accordion-collapse__img {
+        display: block;
+    }
+    
+    .accordion-collapse:hover .accordion-collapse__text {
+        color: inherit;
+    }
+    
+    .accordion-collapse:hover .accordion-collapse__icon {
+        transform: rotate(45deg);
+    }
+
+    .accordion-collapse__icon {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 900px) {
+    .memes__title {
+        margin-bottom: 1rem;
+        font-size: 1.4rem;
+    }
+
+    .accordion-collapse {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .memes__title {
+        font-size: 1.2rem;
+    }
+
+    .accordion-collapse {
+        padding: 0.6rem 0;
+        font-size: 0.8rem;
+    }
+
+    .accordion-collapse__img {
+        height: auto;
+        width: auto;
+    }
+
+    .accordion-collapse__icon {
+        width: 1rem;
+        height: 1rem;
+    }
 }
 
 @keyframes fade-with-scale {
