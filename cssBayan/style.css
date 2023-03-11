@@ -1,0 +1,128 @@
+* {
+    box-sizing: border-box;
+}
+
+body,
+h1,
+p,
+input {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+abbr {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    max-width: 75rem;
+    margin: 0 auto;
+    padding: 0 1.25rem;
+}
+
+.memes {
+    padding: 1rem 0;
+}
+
+.memes__title {
+    margin-bottom: 2rem;
+}
+
+.accordion:hover .accordion-collapse__text {
+    color: inherit;
+}
+
+.accordion:hover .accordion-collapse__icon {
+    opacity: 1;
+}
+
+.accordion-collapse {
+    position: relative;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-top: 0.0625rem solid #d0d7de;
+}
+
+.accordion-collapse:hover .accordion-collapse__img {
+    display: block;
+}
+
+.accordion-collapse:hover .accordion-collapse__text {
+    color: inherit;
+}
+
+.accordion-collapse:hover .accordion-collapse__icon {
+    transform: rotate(45deg);
+}
+
+.accordion-collapse__input {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.accordion-collapse__input:checked + .accordion-collapse__wrap > .accordion-collapse__img {
+    display: block;
+}
+
+.accordion-collapse__input:checked + .accordion-collapse__wrap > .accordion-collapse__text {
+    color: inherit;
+}
+
+.accordion-collapse__input:checked + .accordion-collapse__wrap > .accordion-collapse__icon {
+    transform: rotate(45deg);
+}
+
+.accordion-collapse__input:focus-visible + .accordion-collapse__wrap {
+    outline: 0.1rem dashed #0059D9;
+}
+
+.accordion-collapse__wrap {
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    gap: 0.625rem;
+}
+
+.accordion-collapse__text {
+    color: #0059D9;
+}
+
+.accordion-collapse__img {
+    display: none;
+    height: 25rem;
+    width: 25rem;
+    margin: 0 auto;
+    object-fit: contain;
+    animation: fade-with-scale 0.5s;
+}
+
+.accordion-collapse__icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    opacity: 0;
+    transition: transform 0.5s;
+}
+
+@keyframes fade-with-scale {
+    from {
+        opacity: 0.65;
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

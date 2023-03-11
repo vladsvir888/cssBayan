@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Баян</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     <section class="memes">
@@ -13,67 +17,67 @@
                 <abbr title="Cascading Style Sheets" lang="en">CSS</abbr>
                 Баян
             </h1>
-
             <div class="accordion">
-                <button class="accordion-collapse">
-                    <span class="accordion-collapse__text">Вечное противостояние:</span>
-
-                    <svg class="accordion-collapse__icon" viewBox="0 0 50 50">
-                        <rect fill="none" height="50" width="50"/>
-                        <line fill="none" stroke="#000000" stroke-miterlimit="10" stroke-width="4" x1="9" x2="41" y1="25" y2="25"/>
-                        <line fill="none" stroke="#000000" stroke-miterlimit="10" stroke-width="4" x1="25" x2="25" y1="9" y2="41"/>
-                    </svg>
-
-                    <img class="accordion-collapse__img" src="./images/01.jpg" alt="Разработчик говорит: Фича. Тестировщик: Баг." loading="lazy">
-                </button>
-
-                <button class="accordion-collapse">
-                    <span class="accordion-collapse__text">И так каждый раз:</span>
-
-                    <svg class="accordion-collapse__icon" viewBox="0 0 50 50">
-                        <rect fill="none" height="50" width="50"/>
-                        <line fill="none" stroke="#000000" stroke-miterlimit="10" stroke-width="4" x1="9" x2="41" y1="25" y2="25"/>
-                        <line fill="none" stroke="#000000" stroke-miterlimit="10" stroke-width="4" x1="25" x2="25" y1="9" y2="41"/>
-                    </svg>
-
-                    <img class="accordion-collapse__img" src="./images/02.jpg" alt="-Ты исправил баг? -Да. -Что-нибудь сломалось? -Всё." loading="lazy">
-                </button>
-
-                <button class="accordion-collapse">
-                    <span class="accordion-collapse__text">На встрече с клиентом:</span>
-
-                    <svg class="accordion-collapse__icon" viewBox="0 0 50 50">
-                        <rect fill="none" height="50" width="50"/>
-                        <line fill="none" stroke="#000000" stroke-miterlimit="10" stroke-width="4" x1="9" x2="41" y1="25" y2="25"/>
-                        <line fill="none" stroke="#000000" stroke-miterlimit="10" stroke-width="4" x1="25" x2="25" y1="9" y2="41"/>
-                    </svg>
-
-                    <img class="accordion-collapse__img" src="./images/03.jpg" alt="Недовольный разработчик, когда ПМ обсудил с заказчиком труднореализуемую задачу." loading="lazy">
-                </button>
-
-                <button class="accordion-collapse">
-                    <span class="accordion-collapse__text">То чувство, когда у тебя два монитора:</span>
-
-                    <svg class="accordion-collapse__icon" viewBox="0 0 50 50">
-                        <rect fill="none" height="50" width="50"/>
-                        <line fill="none" stroke="#000000" stroke-miterlimit="10" stroke-width="4" x1="9" x2="41" y1="25" y2="25"/>
-                        <line fill="none" stroke="#000000" stroke-miterlimit="10" stroke-width="4" x1="25" x2="25" y1="9" y2="41"/>
-                    </svg>
-
-                    <img class="accordion-collapse__img" src="./images/04.jpg" alt='Разработчик: "Спасибо, что изменил моё существование". Монитор: "Чел, я просто второй монитор".' loading="lazy">
-                </button>
-
-                <button class="accordion-collapse">
-                    <span class="accordion-collapse__text">Учебник, который мы заслужили:</span>
-
-                    <svg class="accordion-collapse__icon" viewBox="0 0 50 50">
-                        <rect fill="none" height="50" width="50"/>
-                        <line fill="none" stroke="#000000" stroke-miterlimit="10" stroke-width="4" x1="9" x2="41" y1="25" y2="25"/>
-                        <line fill="none" stroke="#000000" stroke-miterlimit="10" stroke-width="4" x1="25" x2="25" y1="9" y2="41"/>
-                    </svg>
-
-                    <img class="accordion-collapse__img" src="./images/05.jpg" alt="В учебнике не различают два самостоятельных языка программирования: Java и JavaScript." loading="lazy">
-                </button>
+                <div class="accordion-collapse">
+                    <input id="radio_1" class="accordion-collapse__input" type="radio" name="radio" checked>
+                    <div class="accordion-collapse__wrap">
+                        <label for="radio_1" class="accordion-collapse__text">Вечное противостояние:</label>
+                        <svg class="accordion-collapse__icon" viewBox="0 0 50 50">
+                            <rect fill="none" height="50" width="50"/>
+                            <line fill="none" stroke="#000000" stroke-miterlimit="10" stroke-width="4" x1="9" x2="41" y1="25" y2="25"/>
+                            <line fill="none" stroke="#000000" stroke-miterlimit="10" stroke-width="4" x1="25" x2="25" y1="9" y2="41"/>
+                        </svg>
+                        <img class="accordion-collapse__img" src="./images/01.jpg" alt="">
+                    </div>
+                </div>
+                <div class="accordion-collapse">
+                    <input id="radio_2" class="accordion-collapse__input" type="radio" name="radio">
+                    <div class="accordion-collapse__wrap">
+                        <label for="radio_2" class="accordion-collapse__text">И так каждый раз:</label>
+                        <svg class="accordion-collapse__icon" viewBox="0 0 50 50">
+                            <rect fill="none" height="50" width="50"/>
+                            <line fill="none" stroke="#000000" stroke-miterlimit="10" stroke-width="4" x1="9" x2="41" y1="25" y2="25"/>
+                            <line fill="none" stroke="#000000" stroke-miterlimit="10" stroke-width="4" x1="25" x2="25" y1="9" y2="41"/>
+                        </svg>
+                        <img class="accordion-collapse__img" src="./images/02.jpg" alt="">
+                    </div>
+                </div>
+                <div class="accordion-collapse">
+                    <input id="radio_3" class="accordion-collapse__input" type="radio" name="radio">
+                    <div class="accordion-collapse__wrap">
+                        <label for="radio_3" class="accordion-collapse__text">На встрече с клиентом:</label>
+                        <svg class="accordion-collapse__icon" viewBox="0 0 50 50">
+                            <rect fill="none" height="50" width="50"/>
+                            <line fill="none" stroke="#000000" stroke-miterlimit="10" stroke-width="4" x1="9" x2="41" y1="25" y2="25"/>
+                            <line fill="none" stroke="#000000" stroke-miterlimit="10" stroke-width="4" x1="25" x2="25" y1="9" y2="41"/>
+                        </svg>
+                        <img class="accordion-collapse__img" src="./images/03.jpg" alt="">
+                    </div>
+                </div>
+                <div class="accordion-collapse">
+                    <input id="radio_4" class="accordion-collapse__input" type="radio" name="radio">
+                    <div class="accordion-collapse__wrap">
+                        <label for="radio_4" class="accordion-collapse__text">То чувство, когда у тебя два монитора:</label>
+                        <svg class="accordion-collapse__icon" viewBox="0 0 50 50">
+                            <rect fill="none" height="50" width="50"/>
+                            <line fill="none" stroke="#000000" stroke-miterlimit="10" stroke-width="4" x1="9" x2="41" y1="25" y2="25"/>
+                            <line fill="none" stroke="#000000" stroke-miterlimit="10" stroke-width="4" x1="25" x2="25" y1="9" y2="41"/>
+                        </svg>
+                        <img class="accordion-collapse__img" src="./images/04.jpg" alt="">
+                    </div>
+                </div>
+                <div class="accordion-collapse">
+                    <input id="radio_5" class="accordion-collapse__input" type="radio" name="radio">
+                    <div class="accordion-collapse__wrap">
+                        <label for="radio_5" class="accordion-collapse__text">Учебник, который мы заслужили:</label>
+                        <svg class="accordion-collapse__icon" viewBox="0 0 50 50">
+                            <rect fill="none" height="50" width="50"/>
+                            <line fill="none" stroke="#000000" stroke-miterlimit="10" stroke-width="4" x1="9" x2="41" y1="25" y2="25"/>
+                            <line fill="none" stroke="#000000" stroke-miterlimit="10" stroke-width="4" x1="25" x2="25" y1="9" y2="41"/>
+                        </svg>
+                        <img class="accordion-collapse__img" src="./images/05.jpg" alt="">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
